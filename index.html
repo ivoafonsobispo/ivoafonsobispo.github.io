@@ -2,57 +2,109 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ivo Afonso Bispo</title>
-    <script src="https://cdn.tailwindcss.com"></script>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ivo Afonso Bispo | Full Stack Engineer</title>
 
-        body {
-            font-family: 'JetBrains Mono', monospace;
-        }
+        <meta name="description"
+            content="Full-stack engineer and ex-researcher specializing in backend and AI/ML, building efficient and scalable systems." />
+        <meta name="keywords" content="full stack engineer, AI/ML, backend development, software engineer, lisbon" />
 
-        .section-reveal {
-            opacity: 0;
-            transform: translateY(10px);
-            transition: opacity 0.4s ease, transform 0.4s ease;
-        }
+        <meta property="og:title" content="Ivo Afonso Bispo | Full Stack Engineer" />
+        <meta property="og:description"
+            content="Full-stack engineer and ex-researcher specializing in backend and AI/ML" />
+        <meta property="og:type" content="website" />
 
-        .section-reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        <script src="https://cdn.tailwindcss.com"></script>
 
-        .link-underline {
-            position: relative;
-        }
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
 
-        .link-underline::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 1px;
-            bottom: -2px;
-            left: 0;
-            background-color: #3B82F6;
-            transition: width 0.3s ease;
-        }
-
-        .link-underline:hover::after {
-            width: 100%;
-        }
-
-        @media (max-width: 640px) {
-            .link-underline::after {
-                bottom: -1px;
+            :root {
+                --bg-color: #111;
+                --text-color: #fff;
+                --hover-bg: rgba(17, 24, 39, 0.3);
             }
-        }
-    </style>
-</head>
+
+            body.light-theme {
+                --bg-color: #f9fafb;
+                --text-color: #111;
+                --hover-bg: rgba(243, 244, 246, 0.7);
+            }
+
+            body {
+                background-color: var(--bg-color);
+                color: var(--text-color);
+                transition: background-color 0.3s ease, color 0.3s ease;
+                font-family: 'JetBrains Mono', monospace;
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+
+                .section-reveal,
+                body {
+                    transition: none !important;
+                }
+            }
+
+            html {
+                scroll-behavior: smooth;
+                scroll-padding-top: 5rem;
+            }
+
+            .section-reveal {
+                opacity: 0;
+                transform: translateY(10px);
+                transition: opacity 0.4s ease, transform 0.4s ease;
+            }
+
+            .section-reveal.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .link-underline {
+                position: relative;
+            }
+
+            .link-underline::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 1px;
+                bottom: -2px;
+                left: 0;
+                background-color: #3B82F6;
+                transition: width 0.3s ease;
+            }
+
+            .link-underline:hover::after {
+                width: 100%;
+            }
+
+            @media (max-width: 640px) {
+                .link-underline::after {
+                    bottom: -1px;
+                }
+            }
+        </style>
+    </head>
 
 <body class="bg-[#111] text-white min-h-screen">
+
+    <nav class="fixed top-0 w-full bg-[#111]/80 backdrop-blur-sm z-40 py-4 hidden md:block">
+        <div class="max-w-4xl mx-auto px-4 flex justify-end space-x-6 text-sm">
+            <a href="#work" class="text-gray-300 hover:text-blue-500 transition-colors">work</a>
+            <a href="#skills" class="text-gray-300 hover:text-blue-500 transition-colors">skills</a>
+            <a href="#projects" class="text-gray-300 hover:text-blue-500 transition-colors">projects</a>
+            <a href="#publications" class="text-gray-300 hover:text-blue-500 transition-colors">publications</a>
+            <a href="#education" class="text-gray-300 hover:text-blue-500 transition-colors">education</a>
+            <a href="#contact" class="text-gray-300 hover:text-blue-500 transition-colors">contact</a>
+        </div>
+    </nav>
+
     <!-- Header Section -->
     <header class="mb-8 md:mb-16 space-y-4 md:space-y-6 max-w-4xl mx-auto mt-8 md:mt-16 px-4">
         <h1 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6">
@@ -96,7 +148,7 @@
     </header>
 
     <!-- Work Section -->
-    <section class="max-w-4xl mx-auto px-4 mb-12 md:mb-20 section-reveal">
+    <section class="max-w-4xl mx-auto px-4 mb-12 md:mb-20 section-reveal" id="work">
         <h2 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">work<span class="text-blue-500">_</span></h2>
 
         <div class="space-y-6 md:space-y-8">
@@ -112,6 +164,14 @@
                         generative ai
                         recommendation models
                     </p>
+                    <div class="mt-3 flex flex-wrap gap-2">
+                        <span
+                            class="inline-block px-3 py-1 text-xs rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">Microservices</span>
+                        <span
+                            class="inline-block px-3 py-1 text-xs rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">AI</span>
+                        <span
+                            class="inline-block px-3 py-1 text-xs rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">RAG</span>
+                    </div>
                 </div>
             </a>
 
@@ -128,6 +188,16 @@
                         to improve model
                         transparency
                     </p>
+                    <div class="mt-3 flex flex-wrap gap-2">
+                        <span
+                            class="inline-block px-3 py-1 text-xs rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">Data
+                            Processing</span>
+                        <span
+                            class="inline-block px-3 py-1 text-xs rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">AI</span>
+                        <span
+                            class="inline-block px-3 py-1 text-xs rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">Explainable
+                            AI</span>
+                    </div>
                 </div>
             </a>
 
@@ -142,13 +212,19 @@
                         and
                         product-focused cms for online retail operations
                     </p>
+                    <div class="mt-3 flex flex-wrap gap-2">
+                        <span
+                            class="inline-block px-3 py-1 text-xs rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">Monolithic</span>
+                        <span
+                            class="inline-block px-3 py-1 text-xs rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">CMS</span>
+                    </div>
                 </div>
             </a>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section class="max-w-4xl mx-auto px-4 mb-12 md:mb-20 section-reveal">
+    <section class="max-w-4xl mx-auto px-4 mb-12 md:mb-20 section-reveal" id="skills">
         <h2 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">skills<span class="text-blue-500">_</span></h2>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
@@ -191,7 +267,7 @@
     </section>
 
     <!-- Project Section -->
-    <section class="max-w-4xl mx-auto px-4 mb-12 md:mb-20 section-reveal">
+    <section class="max-w-4xl mx-auto px-4 mb-12 md:mb-20 section-reveal" id="projects">
         <h2 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">selected project<span class="text-blue-500">_</span></h2>
 
         <div class="space-y-6 md:space-y-8">
@@ -205,6 +281,12 @@
                         and efficient
                         drone delivery of prescribed medications
                     </p>
+                    <div class="mt-3 flex flex-wrap gap-2">
+                        <span
+                            class="inline-block px-3 py-1 text-xs rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">Microservices</span>
+                        <span
+                            class="inline-block px-3 py-1 text-xs rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">Algorithms</span>
+                    </div>
                 </div>
             </a>
 
@@ -216,7 +298,7 @@
     </section>
 
     <!-- Publications Section -->
-    <section class="max-w-4xl mx-auto px-4 mb-12 md:mb-20 section-reveal">
+    <section class="max-w-4xl mx-auto px-4 mb-12 md:mb-20 section-reveal" id="publications">
         <h2 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">publications<span class="text-blue-500">_</span></h2>
 
         <div class="space-y-6 md:space-y-8">
@@ -262,7 +344,7 @@
     </section>
 
     <!-- Education Section -->
-    <section class="max-w-4xl mx-auto px-4 mb-12 md:mb-20 section-reveal">
+    <section class="max-w-4xl mx-auto px-4 mb-12 md:mb-20 section-reveal" id="education">
         <h2 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">education<span class="text-blue-500">_</span></h2>
 
         <div class="space-y-6 md:space-y-8">
@@ -298,7 +380,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="max-w-4xl mx-auto px-4 mb-8 md:mb-16 section-reveal">
+    <section class="max-w-4xl mx-auto px-4 mb-8 md:mb-16 section-reveal" id="contacts">
         <h2 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">contacts<span class="text-blue-500">_</span></h2>
 
         <div class="flex flex-wrap gap-4 md:gap-6 text-xs md:text-sm">
@@ -311,7 +393,6 @@
     </section>
 
     <script>
-        // Subtle reveal animation for sections
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
