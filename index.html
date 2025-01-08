@@ -4,28 +4,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ivo Afonso Bispo</title>
+    <title>Ivo Afonso Bispo | Machine Learning Engineer</title>
 
-    <meta name="description"
-        content="Full-stack engineer and former researcher specializing in backend and AI/ML engineering" />
-    <meta name="keywords" content="full-stack engineer, AI/ML, backend development, software engineer, lisbon" />
+    <meta name="description" content="Machine Learning Engineer building scalable microservices with AI solutions" />
+    <meta name="keywords" content="machine learning engineer, AI/ML, microservices, software engineer, lisbon" />
 
-    <meta property="og:title" content="Ivo Afonso Bispo" />
+    <meta property="og:title" content="Ivo Afonso Bispo | Machine Learning Engineer" />
     <meta property="og:description"
-        content="Full-stack engineer and former researcher specializing in backend and AI/ML engineering" />
+        content="Machine Learning Engineer building scalable microservices with AI solutions" />
     <meta property="og:type" content="website" />
 
     <style>
         /* Base styles */
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
-
-        :root {
-            --spacing-xs: 0.25rem;
-            --spacing-sm: 0.5rem;
-            --spacing-md: 1rem;
-            --spacing-lg: 2rem;
-            --spacing-xl: 3rem;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap');
 
         * {
             margin: 0;
@@ -34,129 +25,138 @@
         }
 
         body {
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: var(--spacing-lg);
-            background-color: #1a1a1a;
-            color: #e0e0e0;
+            padding: 2rem;
+            color: #333;
         }
 
         /* Typography */
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: var(--spacing-md);
-            letter-spacing: -0.5px;
+            font-size: 2rem;
+            margin-bottom: 1rem;
         }
 
         h2 {
-            font-size: 1.75rem;
-            margin: var(--spacing-xl) 0 var(--spacing-lg);
-            letter-spacing: -0.5px;
+            font-size: 1.5rem;
+            margin: 2.5rem 0 1.5rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.5rem;
         }
 
         h3 {
             font-size: 1.25rem;
-            margin: var(--spacing-lg) 0 var(--spacing-xs);
+            margin: 1.5rem 0 0.5rem;
         }
 
         h4 {
             font-size: 1rem;
-            margin-bottom: var(--spacing-xs);
+            margin-bottom: 0.5rem;
+            color: #666;
             font-weight: normal;
-            color: #b0b0b0;
         }
 
         p {
-            margin-bottom: var(--spacing-md);
+            margin-bottom: 1rem;
         }
 
         /* Links */
         a {
-            color: #7aa2f7;
+            color: #333;
             text-decoration: none;
-            border-bottom: 1px solid currentColor;
-            padding-bottom: 2px;
-            transition: opacity 0.2s ease;
+            border-bottom: 1px solid #666;
         }
 
         a:hover {
-            opacity: 0.7;
+            border-bottom: 2px solid #333;
         }
 
         /* Navigation/Contact Links */
         .links {
             display: flex;
-            gap: var(--spacing-md);
-            margin: var(--spacing-lg) 0;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
         }
 
         .links a {
-            border-bottom: none;
-            padding: var(--spacing-xs) var(--spacing-sm);
-            border: 1px solid currentColor;
+            border: 1px solid #333;
+            padding: 0.5rem 1rem;
+        }
+
+        .links a:hover {
+            background: #f5f5f5;
         }
 
         /* Lists */
         ul {
-            list-style-position: inside;
-            margin-bottom: var(--spacing-md);
+            list-style-type: disc;
+            margin: 1rem 0;
+            padding-left: 1.5rem;
         }
 
         li {
-            margin-bottom: var(--spacing-sm);
-            line-height: 1.5;
+            margin-bottom: 0.75rem;
+            padding-left: 0.5rem;
         }
 
-        /* Sections */
-        section {
-            margin-bottom: var(--spacing-xl);
+        /* Work Experience */
+        .work-item {
+            margin-bottom: 2rem;
+        }
+
+        .work-position {
+            font-style: italic;
+            margin-bottom: 0.5rem;
+            color: #666;
         }
 
         /* Skills Grid */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: var(--spacing-lg);
-            margin-top: var(--spacing-md);
+            gap: 2rem;
         }
 
         /* Publications */
         .publications-list {
             display: flex;
             flex-direction: column;
-            gap: var(--spacing-md);
+            gap: 1.5rem;
         }
 
         .publications-list a {
             display: block;
-            margin-bottom: var(--spacing-sm);
-        }
-
-        /* Work Experience */
-        .work-item {
-            margin-bottom: var(--spacing-xl);
-        }
-
-        .work-position {
-            font-style: italic;
-            margin-bottom: var(--spacing-sm);
-            color: #b0b0b0;
+            margin-bottom: 0.75rem;
         }
 
         /* Responsive Design */
         @media (max-width: 600px) {
             body {
-                padding: var(--spacing-md);
-            }
-
-            h1 {
-                font-size: 2rem;
+                padding: 1rem;
             }
 
             .links {
-                flex-wrap: wrap;
+                gap: 1rem;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                padding: 1rem;
+            }
+
+            a {
+                border-bottom: none;
+            }
+
+            .links a {
+                border: none;
+                padding: 0;
+                margin-right: 1rem;
             }
         }
     </style>
@@ -258,24 +258,6 @@
         </div>
     </section>
 
-    <!-- Project Section -->
-    <section>
-        <h2>selected project</h2>
-        <div class="work-item">
-            <h3>careline</h3>
-            <ul>
-                <li>Two technology stack: GoLang for secure health data storage and Spring Boot 3 (Java) for user
-                    management, statistical analysis, and drone delivery simulation.</li>
-                <li>Automated triage & diagnostics: algorithms to improve patient assessment and treatment decisions.
-                </li>
-                <li>Drone delivery simulation: emulates drone-based medication delivery for improved patient care.</li>
-                <li>Real-time communication: webSockets enable interactive user experiences and efficient service
-                    coordination.</li>
-            </ul>
-        </div>
-        <a href="https://github.com/ivoafonsobispo" target="_blank">all projects</a>
-    </section>
-
     <!-- Publications Section -->
     <section>
         <h2>publications</h2>
@@ -322,6 +304,25 @@
             <p>grade: 16/20</p>
         </div>
     </section>
+
+    <!-- Project Section -->
+    <section>
+        <h2>selected project</h2>
+        <div class="work-item">
+            <h3>careline</h3>
+            <ul>
+                <li>Two technology stack: GoLang for secure health data storage and Spring Boot 3 (Java) for user
+                    management, statistical analysis, and drone delivery simulation.</li>
+                <li>Automated triage & diagnostics: algorithms to improve patient assessment and treatment decisions.
+                </li>
+                <li>Drone delivery simulation: emulates drone-based medication delivery for improved patient care.</li>
+                <li>Real-time communication: webSockets enable interactive user experiences and efficient service
+                    coordination.</li>
+            </ul>
+        </div>
+        <a href="https://github.com/ivoafonsobispo" target="_blank">all projects</a>
+    </section>
+
 
     <!-- Contact Section -->
     <section>
