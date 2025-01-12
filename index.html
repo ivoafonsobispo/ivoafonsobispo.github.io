@@ -1,460 +1,459 @@
-< !DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ivo Afonso Bispo | Machine Learning Engineer</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivo Afonso Bispo | Machine Learning Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-        <style>
-            .hover-trigger .hover-target {
-                opacity: 0;
-                transform: translateX(-10px);
-                transition: all 0.3s ease;
-            }
+    <style>
+        .hover-trigger .hover-target {
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: all 0.3s ease;
+        }
 
-            .hover-trigger:hover .hover-target {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        </style>
-    </head>
+        .hover-trigger:hover .hover-target {
+            opacity: 1;
+            transform: translateX(0);
+        }
 
-    <body class="bg-[#fefcf8] font-['Inter']">
-        <!-- Fixed Sidebar -->
-        <aside class="fixed top-0 left-0 h-screen w-80 border-r border-gray-200 overflow-y-auto bg-[#fefcf8] p-10">
-            <div class="flex flex-col gap-6">
-                <div class="space-y-4">
-                    <div class="profile-image-container rounded-xl">
-                        <img src="images/me.jpeg" alt="Ivo Afonso Bispo"
-                            class="profile-image w-60 h-60 object-cover rounded-xl">
-                    </div>
-                    <h1 class="text-2xl font-semibold">Ivo Afonso Bispo</h1>
-                    <div class="text-gray-600 text-sm">Machine Learning Engineer<br>@ Valtech</div>
+        .profile-image {
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image-container:hover .profile-image {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="bg-[#fefcf8] font-['Inter']">
+    <!-- Sidebar -->
+    <aside class="fixed top-0 left-0 h-screen w-80 border-r border-gray-200 overflow-y-auto bg-[#fefcf8] p-10">
+        <div class="flex flex-col gap-6">
+            <div class="space-y-4">
+                <div class="profile-image-container rounded-xl">
+                    <img src="images/me.jpeg" alt="Ivo Afonso Bispo"
+                        class="profile-image w-60 h-60 object-cover rounded-xl">
+                </div>
+                <h1 class="text-2xl font-semibold">Ivo Afonso Bispo</h1>
+                <div class="text-gray-600 text-sm">Machine Learning Engineer<br>@ Valtech</div>
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <a href="mailto:ivoafonsobispo@gmail.com"
+                    class="hover-trigger group flex items-center gap-2 text-gray-800 hover:text-blue-600 transition-colors text-sm">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span>ivoafobispo@gmail.com</span>
+                    <span class="hover-target">→</span>
+                </a>
+
+                <a href="https://github.com/ivoafonsobispo" target="_blank"
+                    class="hover-trigger group flex items-center gap-2 text-gray-800 hover:text-blue-600 transition-colors text-sm">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                    <span>GitHub</span>
+                    <span class="hover-target">→</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/ivoafonsobispo" target="_blank"
+                    class="hover-trigger group flex items-center gap-2 text-gray-800 hover:text-blue-600 transition-colors text-sm">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    <span>LinkedIn</span>
+                    <span class="hover-target">→</span>
+                </a>
+
+                <a href="/docs/ivoafonsobispo-CV.pdf" target="_blank"
+                    class="hover-trigger group flex items-center gap-2 text-gray-800 hover:text-blue-600 transition-colors text-sm">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    <span>CV</span>
+                    <span class="hover-target">→</span>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="ml-80 max-w-4xl mx-auto px-16 py-10">
+        <!-- Bio -->
+        <section class="mb-16">
+            <p class="text-gray-800 text-sm leading-relaxed">
+                Machine Learning Engineer building scalable microservices with AI solutions. <br>
+                Former researcher with backend experience. <br>
+                Based in Lisbon, Portugal.
+            </p>
+        </section>
+
+        <!-- Work Experience -->
+        <section class="mb-16">
+            <h2 class="text-xl font-semibold mb-6 pb-2 border-b border-gray-200 uppercase">Work Experience</h2>
+            <div class="space-y-2">
+                <div class="section-card p-6 rounded-lg">
+                    <h3 class="text-lg font-medium">Valtech</h3>
+                    <p class="text-gray-600 text-sm mb-3">Machine Learning Engineer (Sep 2024 - Present)</p>
+                    <ul class="space-y-3 text-sm">
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Working on the innovation team, delivering scalable microservices with AI solutions using
+                            Azure's cloud infrastructure.
+                        </li>
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Building an AI-powered recommendation engine for B2B e-commerce, providing personalized
+                            product suggestions.
+                        </li>
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Integrating NLP-based retrieval-augmented generation (RAG) to increase the accuracy and
+                            reliability of generative AI models.
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="flex flex-col gap-3">
-                    <a href="mailto:ivoafonsobispo@gmail.com"
-                        class="hover-trigger group flex items-center gap-2 text-gray-800 hover:text-blue-600 transition-colors text-sm">
-                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                            </path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                        <span>ivoafobispo@gmail.com</span>
-                        <span class="hover-target">→</span>
-                    </a>
+                <div class="section-card p-6 rounded-lg">
+                    <h3 class="text-lg font-medium">CIIC - Computer Science and Communication Research Centre</h3>
+                    <p class="text-gray-600 text-sm mb-3">Researcher (Feb 2023 - Jun 2024)</p>
+                    <ul class="space-y-3 text-sm">
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Built a data collection pipeline from network traffic to generate high quality datasets.
+                        </li>
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Performed data processing and cleaning for model training, testing, and validation.
+                        </li>
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Developed DNN and ML models for intrusion detection in IoT environments.
+                        </li>
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Implemented explainable AI methods to improve model transparency, accuracy, and reliability.
+                        </li>
+                    </ul>
+                </div>
 
-                    <a href="https://github.com/ivoafonsobispo" target="_blank"
-                        class="hover-trigger group flex items-center gap-2 text-gray-800 hover:text-blue-600 transition-colors text-sm">
-                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                            </path>
-                        </svg>
-                        <span>GitHub</span>
-                        <span class="hover-target">→</span>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/ivoafonsobispo" target="_blank"
-                        class="hover-trigger group flex items-center gap-2 text-gray-800 hover:text-blue-600 transition-colors text-sm">
-                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                            </path>
-                            <rect x="2" y="9" width="4" height="12"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
-                        </svg>
-                        <span>LinkedIn</span>
-                        <span class="hover-target">→</span>
-                    </a>
-
-                    <a href="/docs/ivoafonsobispo-CV.pdf" target="_blank"
-                        class="hover-trigger group flex items-center gap-2 text-gray-800 hover:text-blue-600 transition-colors text-sm">
-                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <line x1="16" y1="13" x2="8" y2="13"></line>
-                            <line x1="16" y1="17" x2="8" y2="17"></line>
-                            <polyline points="10 9 9 9 8 9"></polyline>
-                        </svg>
-                        <span>CV</span>
-                        <span class="hover-target">→</span>
-                    </a>
+                <div class="section-card p-6 rounded-lg">
+                    <h3 class="text-lg font-medium">WayAcross / WayStart</h3>
+                    <p class="text-gray-600 text-sm mb-3">Full-Stack Developer (Feb 2020 - Jun 2020)</p>
+                    <ul class="space-y-3 text-sm">
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Improved automated workflows for creating website templates, reducing wait times in
+                            production.
+                        </li>
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Built an e-commerce application and product-focused CMS for online retail operations.
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </aside>
+        </section>
 
-        <!-- Main Content -->
-        <main class="ml-80 max-w-4xl mx-auto px-16 py-10">
-            <section class="mb-8 section-card">
-                <p class="text-gray-800 text-sm leading-relaxed">
-                    Machine Learning Engineer building scalable microservices with AI solutions. <br>
-                    Former researcher with backend experience. <br>
-                    Based in Lisbon, Portugal.
-                </p>
-            </section>
+        <!-- Skills -->
+        <section class="mb-16">
+            <h2 class="text-xl font-semibold mb-6 pb-2 border-b border-gray-200 uppercase">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="section-card p-6 rounded-lg">
+                    <h3 class="text-lg font-medium mb-3">Languages</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Python
+                        </li>
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Go
+                        </li>
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            SQL
+                        </li>
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Java
+                        </li>
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            C#
+                        </li>
+                    </ul>
+                </div>
 
-            <!-- Work Experience -->
-            <section class="mb-16">
-                <h2 class="text-xl font-semibold mb-6 pb-2 border-b border-gray-200 uppercase">Work Experience</h2>
-                <div class="space-y-2">
-                    <div class="section-card p-6 rounded-lg ">
-                        <h3 class="text-lg font-medium">Valtech</h3>
-                        <p class="text-gray-600 text-sm mb-3">Machine Learning Engineer (Sep 2024 - Present)</p>
-                        <ul class="space-y-3 text-sm">
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Working on the innovation team, delivering scalable microservices with AI solutions
-                                using
-                                Azure's cloud infrastructure.
-                            </li>
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Building an AI-powered recommendation engine for B2B e-commerce, providing personalized
-                                product suggestions.
-                            </li>
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Integrating NLP-based retrieval-augmented generation (RAG) to increase the accuracy and
-                                reliability of generative AI models.
-                            </li>
-                        </ul>
-                    </div>
+                <div class="section-card p-6 rounded-lg">
+                    <h3 class="text-lg font-medium mb-3">Frameworks</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Scikit-learn
+                        </li>
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Keras
+                        </li>
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            TensorFlow
+                        </li>
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Spring Boot
+                        </li>
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            .NET
+                        </li>
+                    </ul>
+                </div>
 
-                    <div class="section-card p-6 rounded-lg">
-                        <h3 class="text-lg font-medium">CIIC - Computer Science and Communication Research Centre</h3>
-                        <p class="text-gray-600 text-sm mb-3">Researcher (Feb 2023 - Jun 2024)</p>
-                        <ul class="space-y-3 text-sm">
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Built a data collection pipeline from network traffic to generate high quality datasets.
-                            </li>
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Performed data processing and cleaning for model training, testing, and validation.
-                            </li>
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Developed DNN and ML models for intrusion detection in IoT environments.
-                            </li>
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Implemented explainable AI methods to improve model transparency, accuracy, and
-                                reliability.
-                            </li>
-                        </ul>
-                    </div>
+                <div class="section-card p-6 rounded-lg">
+                    <h3 class="text-lg font-medium mb-3">Tools</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Linux
+                        </li>
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Git
+                        </li>
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Docker
+                        </li>
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Azure
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-                    <div class="section-card p-6 rounded-lg ">
-                        <h3 class="text-lg font-medium">WayAcross / WayStart</h3>
-                        <p class="text-gray-600 text-sm mb-3">Full-Stack Developer (Feb 2020 - Jun 2020)</p>
-                        <ul class="space-y-3 text-sm">
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Improved automated workflows for creating website templates, reducing wait times in
-                                production.
-                            </li>
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Built an e-commerce application and product-focused CMS for online retail operations.
-                            </li>
-                        </ul>
+        <!-- Projects -->
+        <section class="mb-16">
+            <h2 class="text-xl font-semibold mb-6 pb-2 border-b border-gray-200 uppercase">Projects</h2>
+            <div class="space-y-2">
+                <div class="section-card p-6 rounded-lg">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-lg font-medium mb-2">IoMT-AI-IDS</h3>
+                            <p class="text-gray-600 text-sm mb-3">
+                                Machine Learning-Based Intrusion Detection System (IDS) for the Internet of Medical
+                                Things (IoMT)
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded-full">Python</span>
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded-full">TensorFlow</span>
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded-full">Scikit-learn</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/ivoafonsobispo/IoMT-AI-IDS" target="_blank"
+                            class="hover-trigger group flex items-center gap-2 text-gray-800 hover:text-blue-600 transition-colors">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            <span class="hover-target">→</span>
+                        </a>
                     </div>
                 </div>
-            </section>
 
-            <!-- Skills -->
-            <section class="mb-16">
-                <h2 class="text-xl font-semibold mb-6 pb-2 border-b border-gray-200 uppercase">Skills</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="section-card p-6 rounded-lg ">
-                        <h3 class="text-lg font-medium mb-3">Languages</h3>
-                        <ul class="space-y-2 text-sm">
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Python
-                            </li>
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Go
-                            </li>
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                SQL
-                            </li>
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Java
-                            </li>
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                C#
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="section-card p-6 rounded-lg ">
-                        <h3 class="text-lg font-medium mb-3">Frameworks</h3>
-                        <ul class="space-y-2 text-sm">
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Scikit-learn
-                            </li>
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Keras
-                            </li>
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                TensorFlow
-                            </li>
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Spring Boot
-                            </li>
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                .NET
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="section-card p-6 rounded-lg ">
-                        <h3 class="text-lg font-medium mb-3">Tools</h3>
-                        <ul class="space-y-2 text-sm">
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Linux
-                            </li>
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Git
-                            </li>
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Docker
-                            </li>
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Azure
-                            </li>
-                        </ul>
+                <!-- XAI-Cybersecurity Project -->
+                <div class="section-card p-6 rounded-lg">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-lg font-medium mb-2">XAI-Cybersecurity</h3>
+                            <p class="text-gray-600 text-sm mb-3">
+                                Explainable AI (XAI) for Cybersecurity: Improving Intrusion Detection System (IDS)
+                                performance and transparency
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded-full">Python</span>
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded-full">TensorFlow</span>
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded-full">Scikit-learn</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/ivoafonsobispo/XAI-Cybersecurity" target="_blank"
+                            class="hover-trigger group flex items-center gap-2 text-gray-800 hover:text-blue-600 transition-colors">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            <span class="hover-target">→</span>
+                        </a>
                     </div>
                 </div>
-            </section>
 
-
-            <section class="mb-16">
-                <h2 class="text-xl font-semibold mb-6 pb-2 border-b border-gray-200 uppercase">Projects</h2>
-                <div class="space-y-6">
-                    <!-- Project Card 1 -->
-                    <div class="section-card p-6 rounded-lg ">
-                        <div class="flex items-start justify-between">
-                            <div>
-                                <h3 class="text-lg font-medium mb-2">IoMT-AI-IDS</h3>
-                                <p class="text-gray-600 text-sm mb-3">
-                                    Machine Learning-Based Intrusion Detection System (IDS) for the Internet of Medical
-                                    Things (IoMT)
-                                </p>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="text-xs px-2 py-1 bg-gray-100 rounded-full">Python</span>
-                                    <span class="text-xs px-2 py-1 bg-gray-100 rounded-full">TensorFlow</span>
-                                    <span class="text-xs px-2 py-1 bg-gray-100 rounded-full">Scikit-learn</span>
-                                </div>
+                <!-- Careline Project -->
+                <div class="section-card p-6 rounded-lg">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-lg font-medium mb-2">Careline</h3>
+                            <p class="text-gray-600 text-sm mb-3">
+                                Open-source remote healthcare service that helps with daily health support, triage
+                                processes, and efficient drone delivery of prescribed medications
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded-full">Java</span>
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded-full">Spring Boot</span>
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded-full">SQL</span>
                             </div>
-                            <a href="https://github.com/ivoafonsobispo/IoMT-AI-IDS" target="_blank"
-                                class="hover-trigger group flex items-center gap-2 text-gray-800 hover:text-blue-600 transition-colors">
-                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                    </path>
-                                </svg>
-                                <span class="hover-target">→</span>
-                            </a>
                         </div>
-                    </div>
-
-                    <!-- Project Card 2 -->
-                    <div class="section-card p-6 rounded-lg ">
-                        <div class="flex items-start justify-between">
-                            <div>
-                                <h3 class="text-lg font-medium mb-2">XAI-Cybersecurity</h3>
-                                <p class="text-gray-600 text-sm mb-3">
-                                    Explainable AI (XAI) for Cybersecurity: Improving Intrusion Detection System (IDS)
-                                    performance and transparency
-                                </p>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="text-xs px-2 py-1 bg-gray-100 rounded-full">Python</span>
-                                    <span class="text-xs px-2 py-1 bg-gray-100 rounded-full">TensorFlow</span>
-                                    <span class="text-xs px-2 py-1 bg-gray-100 rounded-full">Scikit-learn</span>
-                                </div>
-                            </div>
-                            <a href="https://github.com/ivoafonsobispo/XAI-Cybersecurity" target="_blank"
-                                class="hover-trigger group flex items-center gap-2 text-gray-800 hover:text-blue-600 transition-colors">
-                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                    </path>
-                                </svg>
-                                <span class="hover-target">→</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 3 -->
-                    <div class="section-card p-6 rounded-lg ">
-                        <div class="flex items-start justify-between">
-                            <div>
-                                <h3 class="text-lg font-medium mb-2">Careline</h3>
-                                <p class="text-gray-600 text-sm mb-3">
-                                    Open-source remote healthcare service that helps with daily health support, triage
-                                    processes, and efficient drone
-                                    delivery of prescribed medications
-                                </p>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="text-xs px-2 py-1 bg-gray-100 rounded-full">Java</span>
-                                    <span class="text-xs px-2 py-1 bg-gray-100 rounded-full">Spring Boot</span>
-                                    <span class="text-xs px-2 py-1 bg-gray-100 rounded-full">SQL</span>
-                                </div>
-                            </div>
-                            <a href="https://github.com/ivoafonsobispo/Careline" target="_blank"
-                                class="hover-trigger group flex items-center gap-2 text-gray-800 hover:text-blue-600 transition-colors">
-                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                    </path>
-                                </svg>
-                                <span class="hover-target">→</span>
-                            </a>
-                        </div>
+                        <a href="https://github.com/ivoafonsobispo/Careline" target="_blank"
+                            class="hover-trigger group flex items-center gap-2 text-gray-800 hover:text-blue-600 transition-colors">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            <span class="hover-target">→</span>
+                        </a>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
+        <section class="mb-16">
+            <h2 class="text-xl font-semibold mb-6 pb-2 border-b border-gray-200 uppercase">Publications</h2>
+            <div class="space-y-2">
+                <!-- Papers Card -->
+                <div class="section-card p-6 rounded-lg">
+                    <h3 class="text-lg font-medium mb-3">Papers</h3>
+                    <div class="space-y-3">
+                        <a href="https://ieeexplore.ieee.org/document/10620207" target="_blank"
+                            class="hover-trigger group flex items-start justify-between p-1 rounded-lg hover:bg-gray-50 transition-colors">
+                            <span class="text-sm text-gray-800 group-hover:text-blue-600">
+                                IoMT-TrafficData: Dataset and Tools for Benchmarking Intrusion Detection in Internet of
+                                Medical
+                                Things
+                            </span>
+                            <span class="hover-target">→</span>
+                        </a>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0045790624008188" target="_blank"
+                            class="hover-trigger group flex items-start justify-between p-1 rounded-lg hover:bg-gray-50 transition-colors">
+                            <span class="text-sm text-gray-800 group-hover:text-blue-600">
+                                Farm-flow dataset: Intrusion detection in smart agriculture based on network flows
+                            </span>
+                            <span class="hover-target">→</span>
+                        </a>
+                    </div>
+                </div>
 
-            <!-- Publications -->
-            <section class="mb-16">
-                <h2 class="text-xl font-semibold mb-6 pb-2 border-b border-gray-200 uppercase">Publications</h2>
-                <div class="space-y-8">
+                <!-- Datasets Card -->
+                <div class="section-card p-6 rounded-lg">
+                    <h3 class="text-lg font-medium mb-3">Datasets</h3>
+                    <div class="space-y-3">
+                        <a href="https://zenodo.org/records/8116338" target="_blank"
+                            class="hover-trigger group flex items-start justify-between p-1 rounded-lg hover:bg-gray-50 transition-colors">
+                            <span class="text-sm text-gray-800 group-hover:text-blue-600">
+                                IoMT-TrafficData: A Dataset for Benchmarking Intrusion Detection in IoMT
+                            </span>
+                            <span class="hover-target">→</span>
+                        </a>
+                        <a href="https://zenodo.org/records/10964648" target="_blank"
+                            class="hover-trigger group flex items-start justify-between p-1 rounded-lg hover:bg-gray-50 transition-colors">
+                            <span class="text-sm text-gray-800 group-hover:text-blue-600">
+                                Farm-Flow - AG-IoT Security: Intrusion Detection in Smart Agriculture Dataset
+                            </span>
+                            <span class="hover-target">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="mb-16">
+            <h2 class="text-xl font-semibold mb-6 pb-2 border-b border-gray-200 uppercase">Education</h2>
+            <div class="space-y-2">
+                <div class="section-card p-6 rounded-lg">
+                    <h3 class="text-lg font-medium">Polytechnic of Leiria</h3>
+                    <p class="text-gray-600 text-sm mb-2">Masters in Computer Engineering - Mobile Computing (Sep 2023 -
+                        Present)</p>
+                    <ul class="text-sm space-y-2">
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Grade: 18/20
+                        </li>
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Awarded merit student
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section-card p-6 rounded-lg">
+                    <h3 class="text-lg font-medium">Polytechnic of Leiria</h3>
+                    <p class="text-gray-600 text-sm mb-2">Bachelors in Computer Engineering (Sep 2020 - Jul 2023)</p>
+                    <ul class="text-sm space-y-2">
+                        <li
+                            class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                            Grade: 16/20
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates -->
+        <section class="mb-16">
+            <h2 class="text-xl font-semibold mb-6 pb-2 border-b border-gray-200 uppercase">Certificates</h2>
+            <div class="section-card p-6 rounded-lg">
+                <div class="space-y-4">
                     <div>
-                        <h3 class="text-lg font-medium mb-4">Papers</h3>
-                        <div class="space-y-3">
-                            <a href="https://ieeexplore.ieee.org/document/10620207" target="_blank"
-                                class="hover-trigger group block p-1 rounded-lg hover:bg-gray-50 transition-colors">
-                                <div class="flex items-center gap-2 ">
-                                    <span class="text-sm text-gray-800 group-hover:text-blue-600">IoMT-TrafficData:
-                                        Dataset and Tools for Benchmarking Intrusion Detection in Internet of Medical
-                                        Things</span>
-                                    <span class="hover-target">→</span>
-                                </div>
-                            </a>
-                            <a href="https://www.sciencedirect.com/science/article/pii/S0045790624008188"
-                                target="_blank"
-                                class="hover-trigger group block p-1 rounded-lg hover:bg-gray-50 transition-colors">
-                                <div class="flex items-center gap-2 ">
-                                    <span class="text-sm text-gray-800 group-hover:text-blue-600">Farm-flow dataset:
-                                        Intrusion detection in smart agriculture based on network flows</span>
-                                    <span class="hover-target">→</span>
-                                </div>
-                            </a>
-                        </div>
+                        <h3 class="text-lg font-medium">Machine Learning Specialization</h3>
+                        <p class="text-gray-600 text-sm">Coursera by Andrew Ng</p>
                     </div>
                     <div>
-                        <h3 class="text-lg font-medium mb-4">Datasets</h3>
-                        <div class="space-y-3">
-                            <a href="https://zenodo.org/records/8116338" target="_blank"
-                                class="hover-trigger group block p-1 rounded-lg hover:bg-gray-50 transition-colors">
-                                <div class="flex items-center gap-2 ">
-                                    <span class="text-sm text-gray-800 group-hover:text-blue-600">IoMT-TrafficData: A
-                                        Dataset for Benchmarking Intrusion Detection in IoMT</span>
-                                    <span class="hover-target">→</span>
-                                </div>
-                            </a>
-                            <a href="https://zenodo.org/records/10964648" target="_blank"
-                                class="hover-trigger group block p-1 rounded-lg hover:bg-gray-50 transition-colors">
-                                <div class="flex items-center gap-2 ">
-                                    <span class="text-sm text-gray-800 group-hover:text-blue-600">Farm-Flow - AG-IoT
-                                        Security: Intrusion Detection in Smart Agriculture Dataset</span>
-                                    <span class="hover-target">→</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <!-- Education -->
-            <section class="mb-16">
-                <h2 class="text-xl font-semibold mb-6 pb-2 border-b border-gray-200 uppercase">Education</h2>
-                <div class="space-y-2">
-                    <div class="section-card p-6 rounded-lg">
-                        <h3 class="text-lg font-medium">Polytechnic of Leiria</h3>
-                        <p class="text-gray-600 text-sm mb-2">Masters in Computer Engineering - Mobile Computing (Sep
-                            2023 -
-                            Present)</p>
-                        <ul class="text-sm space-y-2">
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Grade: 18/20
-                            </li>
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Awarded merit student
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="section-card p-6 rounded-lg">
-                        <h3 class="text-lg font-medium">Polytechnic of Leiria</h3>
-                        <p class="text-gray-600 text-sm mb-2">Bachelors in Computer Engineering (Sep 2020 - Jul 2023)
-                        </p>
-                        <ul class="text-sm space-y-2">
-                            <li
-                                class="pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400">
-                                Grade: 16/20
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mb-16">
-                <h2 class="text-xl font-semibold mb-6 pb-2 border-b border-gray-200 uppercase">Certificates</h2>
-                <div class="space-y-2">
-                    <div class="section-card p-6 rounded-lg">
-                        <h3 class="text-lg font-medium">Machine Learning Specialization
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-2">Coursera by Andrew Ng</p>
                         <h3 class="text-lg font-medium">Machine Learning Crash Course with TensorFlow APIs</h3>
-                        <p class="text-gray-600 text-sm mb-2">Google Developers
-                        </p>
+                        <p class="text-gray-600 text-sm">Google Developers</p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="mb-16">
-                <h2 class="text-xl font-semibold mb-6 pb-2 border-b border-gray-200 uppercase">Seminars</h2>
-                <div class="space-y-2">
-                    <div class="section-card p-6 rounded-lg">
+        <!-- Seminars -->
+        <section class="mb-16">
+            <h2 class="text-xl font-semibold mb-6 pb-2 border-b border-gray-200 uppercase">Seminars</h2>
+            <div class="section-card p-6 rounded-lg">
+                <div class="space-y-4">
+                    <div>
                         <h3 class="text-lg font-medium">Dataset Creation for Machine Learning-based Intrusion Detection
                         </h3>
-                        <p class="text-gray-600 text-sm mb-2">Polytechnic of Leiria</p>
+                        <p class="text-gray-600 text-sm">Polytechnic of Leiria</p>
+                    </div>
+                    <div>
                         <h3 class="text-lg font-medium">Explainable AI and Cybersecurity</h3>
-                        <p class="text-gray-600 text-sm mb-2">Polytechnic of Leiria
-                        </p>
+                        <p class="text-gray-600 text-sm">Polytechnic of Leiria</p>
                     </div>
                 </div>
-            </section>
-        </main>
-    </body>
+            </div>
+        </section>
+    </main>
+</body>
 
-    </html>
+</html>
