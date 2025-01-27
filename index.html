@@ -2,490 +2,343 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ivo Afonso Bispo | ML Engineer</title>
-    <!-- Minimal Google Fonts import (optional) -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-    <style>
-        /* Base Reset/Defaults */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-            line-height: 1.7;
-            color: #2d3748;
-            background-color: #f8f9fa;
-        }
-
-        /* Container for centered content */
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 2.5rem;
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        }
-
-        header,
-        main,
-        section,
-        nav,
-        ul,
-        li,
-        a,
-        h1,
-        h2,
-        h3,
-        p {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Header styling */
-        header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        header h1 {
-            font-size: 2.25rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            color: #1a202c;
-        }
-
-        header p {
-            color: #555;
-            margin-bottom: 1rem;
-        }
-
-        /* Navigation links */
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-
-        nav a {
-            display: inline-flex;
-            align-items: center;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            color: #4a5568;
-            font-size: 0.95rem;
-            border-radius: 6px;
-            transition: all 0.2s ease;
-            background-color: #f7fafc;
-        }
-
-        nav a:hover {
-            background-color: #edf2f7;
-            color: #2b6cb0;
-            transform: translateY(-1px);
-        }
-
-        /* Section headings */
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-top: 2.5rem;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #edf2f7;
-            color: #1a202c;
-        }
-
-        h3 {
-            font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 0.25rem;
-            color: #444;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            color: #444;
-        }
-
-        /* Lists */
-        ul {
-            list-style: disc;
-            margin-left: 1.25rem;
-            margin-bottom: 1.5rem;
-        }
-
-        /* Tag styling for highlighting tech stack */
-        .tag {
-            display: inline-block;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-            padding: 0.35rem 0.75rem;
-            background: #edf2f7;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            color: #4a5568;
-            transition: all 0.2s ease;
-        }
-
-        .tag:hover {
-            background: #e2e8f0;
-            transform: translateY(-1px);
-        }
-
-        /* Links */
-        a {
-            color: #007acc;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Spacing between sections */
-        section {
-            margin-bottom: 2rem;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 2rem;
-            background-color: #f7fafc;
-            padding: 1.5rem;
-            border-radius: 8px;
-        }
-
-        .skills-grid h3 {
-            color: #2d3748;
-            margin-bottom: 1rem;
-        }
-
-        .skills-grid ul {
-            margin-bottom: 0;
-        }
-
-        /* Project cards */
-        .project-card {
-            background-color: #f7fafc;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin-bottom: 1.5rem;
-            transition: all 0.2s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .container {
-                margin: 1rem;
-                padding: 1.5rem;
-            }
-
-            header h1 {
-                font-size: 1.75rem;
-            }
-
-            nav {
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-            nav a {
-                text-align: center;
-            }
-        }
-
-        /* Publications styling */
-        .publications-grid {
-            display: grid;
-            gap: 2rem;
-        }
-
-        .publication-card {
-            background-color: #f7fafc;
-            padding: 1.25rem;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            transition: all 0.2s ease;
-        }
-
-        .publication-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        }
-
-        .publication-title {
-            font-weight: 500;
-            color: #2d3748;
-            margin-bottom: 0.75rem;
-        }
-
-        .publication-link {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.9rem;
-        }
-
-        .publisher-tag {
-            background-color: #e2e8f0;
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            color: #4a5568;
-        }
-
-        .publication-category h3 {
-            margin-bottom: 1rem;
-        }
-
-        @media (min-width: 768px) {
-            .publications-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivo Afonso Bispo - ML Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Enhanced Header with Mobile Menu -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <h1 class="text-xl font-bold text-gray-800">Ivo Afonso Bispo</h1>
+            <div class="flex items-center space-x-4">
+                <a href="/docs/ivoafonsobispo-cv.pdf"
+                    class="bg-blue-500 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-600"
+                    target="_blank">Download CV</a>
+            </div>
+        </div>
+    </header>
 
-    <div class="container">
-        <header>
-            <h1>Ivo Afonso Bispo</h1>
-            <p>Machine Learning Engineer @ Valtech</p>
-            <nav>
-                <a href="mailto:ivoafonsobispo@gmail.com">ivoafonsobispo@gmail.com</a>
-                <a href="https://github.com/ivoafonsobispo" target="_blank">github.com/ivoafonsobispo</a>
-                <a href="https://www.linkedin.com/in/ivoafonsobispo" target="_blank">
-                    linkedin.com/in/ivoafonsobispo</a>
-                <a href="/docs/ivoafonsobispo-CV.pdf" target="_blank">CV</a>
-            </nav>
-        </header>
+    <!-- Main Dashboard Layout -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
 
-        <main>
-            <section>
-                <p>Building scalable microservices with AI solutions.</p>
-            </section>
-
-            <section>
-                <h2>Work Experience</h2>
-                <div>
-                    <h3>Valtech</h3>
-                    <p>Machine Learning Engineer (Sep 2024 - Present)</p>
-                    <ul>
-                        <li>Working on the innovation team, delivering scalable microservices with AI solutions using
-                            Azure's cloud infrastructure.</li>
-                        <li>Building an AI-powered recommendation engine for B2B e-commerce, providing personalized
-                            product suggestions.</li>
-                        <li>Integrated NLP-based Retrieval-Augmented Generation (RAG) to increase the accuracy and
-                            reliability of generative AI models.</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3>CIIC - Computer Science and Communication Research Centre</h3>
-                    <p>Researcher (Feb 2023 - Jun 2024)</p>
-                    <ul>
-                        <li>Built a data collection pipeline from network traffic to generate high quality datasets.
-                        </li>
-                        <li>Performed data processing and cleaning for model training, testing, and validation.</li>
-                        <li>Developed DNN and ML models for intrusion detection in IoT environments.</li>
-                        <li>Implemented explainable AI methods to improve model transparency, accuracy, and reliability.
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3>WayAcross</h3>
-                    <p>Full-Stack Developer (Feb 2020 - Jun 2020)</p>
-                    <ul>
-                        <li>Improved automated workflows for creating website templates, reducing wait times in
-                            production.</li>
-                        <li>Built an e-commerce application and product-focused CMS for online retail operations.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section>
-                <h2>Skills</h2>
-                <div class="skills-grid">
-                    <div>
-                        <h3>Languages</h3>
-                        <ul>
-                            <li>Python</li>
-                            <li>Go</li>
-                            <li>SQL</li>
-                            <li>Java</li>
-                            <li>C#</li>
-                        </ul>
+            <!-- Left Column - Profile & Quick Info -->
+            <div class="md:col-span-4 space-y-6">
+                <!-- Profile Card with Image -->
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <div class="relative w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
+                        <img src="/images/me.jpeg" alt="Profile Photo" class="w-full h-full object-cover">
                     </div>
-                    <div>
-                        <h3>Frameworks</h3>
-                        <ul>
-                            <li>Scikit-learn</li>
-                            <li>Keras</li>
-                            <li>TensorFlow</li>
-                            <li>Spring Boot</li>
-                            <li>.NET</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>Linux</li>
-                            <li>Git</li>
-                            <li>Docker</li>
-                            <li>Azure</li>
-                        </ul>
+                    <h2 class="text-xl font-bold text-center mb-2">Machine Learning Engineer</h2>
+                    <div class="flex justify-center space-x-4">
+                        <a href="mailto:ivoafobispo@gmail.com" class="text-blue-500 hover:text-blue-700"
+                            target="_blank">
+                            ivoafobispo@gmail.com
+                        </a>
+                        <a href="https://github.com/ivoafonsobispo" class="text-blue-500 hover:text-blue-700"
+                            target="_blank">
+                            github
+                        </a>
+                        <a href="https://www.linkedin.com/in/ivoafonsobispo" class="text-blue-500 hover:text-blue-700"
+                            target="_blank">
+                            linkedin
+                        </a>
                     </div>
                 </div>
-            </section>
 
-
-            <section>
-                <h2>Projects</h2>
-                <div class="project-card">
-                    <h3>IoMT-AI-IDS</h3>
-                    <p>Machine Learning-Based Intrusion Detection System for the Internet of Medical Things (IoMT)</p>
-                    <span class="tag">Python</span>
-                    <span class="tag">TensorFlow</span>
-                    <span class="tag">Scikit-learn</span><br />
-                    <a href="https://github.com/ivoafonsobispo/IoMT-AI-IDS" target="_blank">View on GitHub</a>
+                <!-- Description -->
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h3 class="font-bold mb-4">About Me</h3>
+                    <p class="text-gray-600">
+                        Based in Lisbon, Portugal, I'm currently working with Valtech's
+                        innovation team. My focus is on delivering scalable AI microservices, particularly developing
+                        recommendation engines for B2B e-commerce that combine LLM with Agentic RAG.
+                    </p>
                 </div>
 
-                <div class="project-card">
-                    <h3>XAI-Cybersecurity</h3>
-                    <p>Explainable AI for Cybersecurity: Improving Intrusion Detection System (IDS) performance and
-                        transparency</p>
-                    <span class="tag">Python</span>
-                    <span class="tag">TensorFlow</span>
-                    <span class="tag">Scikit-learn</span><br />
-                    <a href="https://github.com/ivoafonsobispo/XAI-Cybersecurity" target="_blank">View on GitHub</a>
-                </div>
-
-                <div class="project-card">
-                    <h3>Careline</h3>
-                    <p>Open-source remote healthcare service for daily health support, triage processes, and efficient
-                        drone delivery</p>
-                    <span class="tag">Java</span>
-                    <span class="tag">Spring Boot</span>
-                    <span class="tag">SQL</span><br />
-                    <a href="https://github.com/ivoafonsobispo/Careline" target="_blank">View on GitHub</a>
-                </div>
-            </section>
-
-            <section>
-                <h2>Publications</h2>
-                <div class="publications-grid">
-                    <div class="publication-category">
-                        <h3>Papers</h3>
-                        <div class="publication-card">
-                            <p class="publication-title">IoMT-TrafficData: Dataset and Tools for Benchmarking Intrusion
-                                Detection in IoMT</p>
-                            <a href="https://ieeexplore.ieee.org/document/10620207" target="_blank"
-                                class="publication-link">
-                                <span class="publisher-tag">IEEE</span>
-                                View Publication →
-                            </a>
+                <!-- Quick Stats -->
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h3 class="font-bold mb-4">Highlights</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600">AI/ML Researcher</span>
+                            <span class="font-bold">~2 years</span>
                         </div>
-
-                        <div class="publication-card">
-                            <p class="publication-title">Farm-flow dataset: Intrusion detection in smart agriculture
-                                based on network flows</p>
-                            <a href="https://www.sciencedirect.com/science/article/pii/S0045790624008188"
-                                target="_blank" class="publication-link">
-                                <span class="publisher-tag">ScienceDirect</span>
-                                View Publication →
-                            </a>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600">AI/ML Engineer</span>
+                            <span class="font-bold">~1 years</span>
                         </div>
-                    </div>
-
-                    <div class="publication-category">
-                        <h3>Datasets</h3>
-                        <div class="publication-card">
-                            <p class="publication-title">IoMT-TrafficData: A Dataset for Benchmarking Intrusion
-                                Detection in IoMT</p>
-                            <a href="https://zenodo.org/records/8116338" target="_blank" class="publication-link">
-                                <span class="publisher-tag">Zenodo</span>
-                                View Dataset →
-                            </a>
-                        </div>
-
-                        <div class="publication-card">
-                            <p class="publication-title">Farm-Flow - AG-IoT Security: Intrusion Detection in Smart
-                                Agriculture</p>
-                            <a href="https://zenodo.org/records/10964648" target="_blank" class="publication-link">
-                                <span class="publisher-tag">Zenodo</span>
-                                View Dataset →
-                            </a>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600">Publications</span>
+                            <span class="font-bold">4 accepted</span>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <section>
-                <h2>Education</h2>
-                <div>
-                    <h3>Polytechnic of Leiria</h3>
-                    <p>Masters in Computer Engineering - Mobile Computing (Sep 2023 - Present)</p>
-                    <ul>
-                        <li>Grade: 18/20</li>
-                        <li>Awarded merit student</li>
-                    </ul>
+
+                <!-- Technical Skills Cloud -->
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h3 class="font-bold mb-4">Expertise</h3>
+                    <div class="space-y-8">
+                        <div class="border-l-4 pl-4">
+                            <h4 class="font-semibold mb-3 text-gray-700">Languages</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Go</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">C#</span>
+                            </div>
+                        </div>
+                        <div class="border-l-4 pl-4">
+                            <h4 class="font-semibold mb-3 text-gray-700">Frameworks</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">Scikit-learn</span>
+                                <span class="skill-tag">Keras</span>
+                                <span class="skill-tag">TensorFlow</span>
+                                <span class="skill-tag">Spring Boot</span>
+                                <span class="skill-tag">.NET</span>
+                            </div>
+                        </div>
+                        <div class="border-l-4 pl-4">
+                            <h4 class="font-semibold mb-3 text-gray-700">Tools</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">Linux</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Azure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Detailed Sections -->
+            <div class="md:col-span-8 space-y-6">
+                <!-- Experience Section -->
+                <div class="bg-white rounded-xl shadow-sm">
+                    <div class="p-6 flex justify-between items-center">
+                        <h3 class="font-bold">Professional Experience</h3>
+                    </div>
+                    <div id="experience" class="expandable-content px-6 pb-6">
+                        <div class="space-y-6">
+                            <div class="timeline-item">
+                                <h4 class="font-semibold">Machine Learning Engineer @ Valtech</h4>
+                                <div class="text-sm text-gray-600 mb-2">Sep 2024 - Present</div>
+                                <ul class="space-y-2">
+                                    <li>• Working on the innovation team, delivering scalable microservices with AI
+                                        solutions using Azure's cloud infrastructure</li>
+                                    <li>• Building an AI-powered recommendation engine for B2B e-commerce, providing
+                                        personalized product suggestions</li>
+                                    <li>• Integrated NLP-based Retrieval-Augmented Generation (RAG) to increase the
+                                        accuracy and reliability of generative AI models</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-item">
+                                <h4 class="font-semibold">Researcher @ CIIC - Computer Science and Communication
+                                    Research Centre</h4>
+                                <div class="text-sm text-gray-600 mb-2">Feb 2023 - Jun 2024</div>
+                                <ul class="space-y-2">
+                                    <li>• Built a data collection pipeline from network traffic to generate high quality
+                                        datasets</li>
+                                    <li>• Performed data processing and cleaning for model training, testing, and
+                                        validation</li>
+                                    <li>• Developed DNN and ML models for intrusion detection in IoT environments</li>
+                                    <li>• Implemented explainable AI methods to improve model transparency, accuracy,
+                                        and reliability</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-item">
+                                <h4 class="font-semibold">Full-Stack Developer @ WayAcross</h4>
+                                <div class="text-sm text-gray-600 mb-2">Feb 2020 - Jun 2020</div>
+                                <ul class="space-y-2">
+                                    <li>• Improved automated workflows for creating website templates, reducing wait
+                                        times in production</li>
+                                    <li>• Built an e-commerce application and product-focused CMS for online retail
+                                        operations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <h3>Polytechnic of Leiria</h3>
-                    <p>Bachelors in Computer Engineering (Sep 2020 - Jul 2023)</p>
-                    <ul>
-                        <li>Grade: 16/20</li>
-                    </ul>
+                <!-- Projects Section -->
+                <div class="bg-white rounded-xl shadow-sm">
+                    <div class="p-6 flex justify-between items-center">
+                        <h3 class="font-bold">Featured Projects</h3>
+                    </div>
+                    <div id="projects" class="expandable-content px-6 pb-6">
+                        <div class="grid gap-4 md:grid-cols-2">
+                            <div
+                                class="card bg-gray-50 rounded-lg p-4 transition-transform hover:scale-105 hover:shadow-md">
+                                <a href="https://github.com/ivoafonsobispo/IoMT-AI-IDS" class="block" target="_blank">
+                                    <h4 class="font-semibold mb-2">IoMT-AI-IDS</h4>
+                                    <p class="text-sm text-gray-600 mb-3">Machine Learning-Based Intrusion Detection
+                                        System
+                                        for the Internet of Medical Things (IoMT)</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">TensorFlow</span>
+                                        <span class="tech-tag">Scikit-learn</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="card bg-gray-50 rounded-lg p-4 transition-transform hover:scale-105 hover:shadow-md">
+                                <a href="https://github.com/ivoafonsobispo/XAI-Cybersecurity" class="block"
+                                    target="_blank">
+                                    <h4 class="font-semibold mb-2">XAI-Cybersecurity</h4>
+                                    <p class="text-sm text-gray-600 mb-3">Explainable AI for Cybersecurity: Improving
+                                        Intrusion Detection System (IDS) performance and transparency</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">TensorFlow</span>
+                                        <span class="tech-tag">Scikit-learn</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="card bg-gray-50 rounded-lg p-4 transition-transform hover:scale-105 hover:shadow-md">
+                                <a href="https://github.com/ivoafonsobispo/Careline" class="block" target="_blank">
+                                    <h4 class="font-semibold mb-2">Careline</h4>
+                                    <p class="text-sm text-gray-600 mb-3">Open-source remote healthcare service for
+                                        daily
+                                        health support, triage processes, and efficient drone delivery</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="tech-tag">Java</span>
+                                        <span class="tech-tag">Spring Boot</span>
+                                        <span class="tech-tag">SQL</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
 
-            <section>
-                <h2>Certificates</h2>
-                <div>
-                    <h3>Machine Learning Specialization</h3>
-                    <p>Coursera by Andrew Ng</p>
+                <!-- Publications Section -->
+                <div class="bg-white rounded-xl shadow-sm">
+                    <div class="p-6 flex justify-between items-center">
+                        <h3 class="font-bold">Publications</h3>
+                    </div>
+                    <div id="publications" class="expandable-content px-6 pb-6">
+                        <div class="space-y-6">
+                            <!-- Papers Section -->
+                            <div>
+                                <h4 class="font-semibold mb-4">Papers</h4>
+                                <div class="grid gap-4 md:grid-cols-2">
+                                    <div
+                                        class="card bg-gray-50 rounded-lg p-4 transition-transform hover:scale-105 hover:shadow-md">
+                                        <a href="https://ieeexplore.ieee.org/document/10620207" target="_blank">
+                                            <h5 class="font-semibold mb-2">IoMT-TrafficData: Dataset and Tools for
+                                                Benchmarking Intrusion Detection in IoMT</h5>
+                                            <p class="text-sm text-gray-600 mb-3">IEEE</p>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="card bg-gray-50 rounded-lg p-4 transition-transform hover:scale-105 hover:shadow-md">
+                                        <a href="https://www.sciencedirect.com/science/article/pii/S0045790624008188"
+                                            target="_blank">
+                                            <h5 class="font-semibold mb-2">Farm-flow dataset: Intrusion Detection in
+                                                Smart
+                                                Agriculture based on Network Flows</h5>
+                                            <p class="text-sm text-gray-600 mb-3">ScienceDirect</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Datasets Section -->
+                            <div>
+                                <h4 class="font-semibold mb-4">Datasets</h4>
+                                <div class="grid gap-4 md:grid-cols-2">
+                                    <div
+                                        class="card bg-gray-50 rounded-lg p-4 transition-transform hover:scale-105 hover:shadow-md">
+                                        <a href="https://zenodo.org/records/8116338" target="_blank">
+                                            <h5 class="font-semibold mb-2">IoMT-TrafficData: A Dataset for Benchmarking
+                                                Intrusion Detection in IoMT</h5>
+                                            <p class="text-sm text-gray-600 mb-3">Zenodo</p>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="card bg-gray-50 rounded-lg p-4 transition-transform hover:scale-105 hover:shadow-md">
+                                        <a href="https://zenodo.org/records/10964648" target="_blank">
+                                            <h5 class="font-semibold mb-2">Farm-Flow - AG-IoT Security: Intrusion
+                                                Detection
+                                                in Smart Agriculture</h5>
+                                            <p class="text-sm text-gray-600 mb-3">Zenodo</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <h3>Machine Learning Crash Course with TensorFlow APIs</h3>
-                    <p>Google Developers</p>
+                <!-- Education Section -->
+                <div class="bg-white rounded-xl shadow-sm">
+                    <div class="p-6 flex justify-between items-center" ">
+                        <h3 class=" font-bold">Education</h3>
+                    </div>
+                    <div id="education" class="expandable-content px-6 pb-6">
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold">Masters in Computer Engineering - Mobile Computing</h4>
+                                <div class="text-sm text-gray-600">Polytechnic of Leiria | Sep 2023 - Present</div>
+                                <p class="text-sm">Awarded merit student</p>
+                                <p class="text-sm mt-1">Grade: 18/20</p>
+                            </div>
+                            <div class="mt-4">
+                                <h4 class="font-semibold">Bachelors in Computer Engineering</h4>
+                                <div class="text-sm text-gray-600">Polytechnic of Leiria | Sep 2020 - Jul 2023</div>
+                                <p class="text-sm mt-1">Grade: 16/20</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
 
-            <section>
-                <h2>Seminars</h2>
-                <div>
-                    <h3>Dataset Creation for ML-based Intrusion Detection</h3>
-                    <p>Polytechnic of Leiria</p>
+                <!-- Certifications Section -->
+                <div class="bg-white rounded-xl shadow-sm">
+                    <div class="p-6 flex justify-between items-center">
+                        <h3 class="font-bold">Certificates</h3>
+                    </div>
+                    <div id="certifications" class="expandable-content px-6 pb-6">
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold">Machine Learning Specialization</h4>
+                                <div class="text-sm text-gray-600">DeepLearning.AI</div>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Machine Learning Crash Course with TensorFlow APIs</h4>
+                                <div class="text-sm text-gray-600">Google Developers</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <h3>Explainable AI and Cybersecurity</h3>
-                    <p>Polytechnic of Leiria</p>
+                <!-- Seminars Section -->
+                <div class="bg-white rounded-xl shadow-sm">
+                    <div class="p-6 flex justify-between items-center">
+                        <h3 class="font-bold">Seminars</h3>
+                    </div>
+                    <div id="seminars" class="expandable-content px-6 pb-6">
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold">Dataset Creation for ML-based Intrusion Detection</h4>
+                                <div class="text-sm text-gray-600">Polytechnic of Leiria</div>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Explainable AI and Cybersecurity</h4>
+                                <div class="text-sm text-gray-600">Polytechnic of Leiria</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </main>
-    </div>
-
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
